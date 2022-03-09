@@ -17,6 +17,8 @@
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
 		B557483227C71D490036D892 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B557483127C71D490036D892 /* .gitignore */; };
+		B5BC59D427D85D4D007431D3 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC59D327D85D4D007431D3 /* CalendarCell.swift */; };
+		B5BC59D827D87BC0007431D3 /* CalendarMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC59D727D87BC0007431D3 /* CalendarMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B557482227C71B0D0036D892 /* ataglanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITests.swift; sourceTree = "<group>"; };
 		B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B557483127C71D490036D892 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B5BC59D327D85D4D007431D3 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		B5BC59D727D87BC0007431D3 /* CalendarMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
 				B557480727C71B090036D892 /* Main.storyboard */,
+				B5BC59D727D87BC0007431D3 /* CalendarMethods.swift */,
 				B557480A27C71B0C0036D892 /* Assets.xcassets */,
 				B557480C27C71B0D0036D892 /* LaunchScreen.storyboard */,
 				B557480F27C71B0D0036D892 /* Info.plist */,
 				B557483127C71D490036D892 /* .gitignore */,
+				B5BC59D327D85D4D007431D3 /* CalendarCell.swift */,
 			);
 			path = ataglance;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			files = (
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
+				B5BC59D827D87BC0007431D3 /* CalendarMethods.swift in Sources */,
+				B5BC59D427D85D4D007431D3 /* CalendarCell.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

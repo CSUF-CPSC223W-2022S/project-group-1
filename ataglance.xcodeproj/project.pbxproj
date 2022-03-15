@@ -17,8 +17,8 @@
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
 		B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */; };
-		B7189C5227D7DA690046A189 /* MotiveQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7189C5127D7DA690046A189 /* MotiveQuotesTests.swift */; };
 		B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3ED27D93AFB0035206B /* MQViewController.swift */; };
+		B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */; };
 		B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +54,8 @@
 		B557482227C71B0D0036D892 /* ataglanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITests.swift; sourceTree = "<group>"; };
 		B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivQuotes.swift; sourceTree = "<group>"; };
-		B7189C5127D7DA690046A189 /* MotiveQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveQuotesTests.swift; sourceTree = "<group>"; };
 		B71DA3ED27D93AFB0035206B /* MQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQViewController.swift; sourceTree = "<group>"; };
+		B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivQuotesTest.swift; sourceTree = "<group>"; };
 		B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motivationalQuotes.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +150,7 @@
 		B7189C5027D7DA480046A189 /* MotivationalQuotesTests */ = {
 			isa = PBXGroup;
 			children = (
-				B7189C5127D7DA690046A189 /* MotiveQuotesTests.swift */,
+				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
 			);
 			path = MotivationalQuotesTests;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7189C5227D7DA690046A189 /* MotiveQuotesTests.swift in Sources */,
+				B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */,
 				B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

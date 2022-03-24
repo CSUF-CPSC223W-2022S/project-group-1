@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-class timerVC: UIViewController {
+class timerVC: UIViewController, UNUserNotificationCenterDelegate {
 
     @IBOutlet var timeDisplay: UILabel!
     @IBOutlet var resetButton: UIButton!
@@ -18,6 +18,7 @@ class timerVC: UIViewController {
     var timer_: Timer = Timer()
     var hasStart: Bool = false
     var hasPause: Bool = false
+    var center: UNUserNotificationCenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,9 @@ class timerVC: UIViewController {
         resetButton.isEnabled = false
         timeDisplay.isHidden = true
         // ask for notification permission
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+        center = UNUserNotificationCenter.current()
+        center.delegate = self
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {}
             else if let error = error {
                 print(error.localizedDescription)
@@ -61,19 +64,7 @@ class timerVC: UIViewController {
         if canDec {
             timeDisplay.text = timer.displayTime()
         } else {
-            // send alert to user
-            //print("alert!!!")
-            let content = UNMutableNotificationContent()
-            content.title = "Times Up!!!"
-            content.sound = UNNotificationSound.default
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
-            UNUserNotificationCenter.current().add(request) { error in
-                if let error = error {
-                    print(error.localizedDescription)
-                }
-            }
+            sendNotif()
             timer_.invalidate()
             pressReset(self)
         }
@@ -87,5 +78,19 @@ class timerVC: UIViewController {
         startButton.setTitle("Start", for: .normal)
         startButton.tintColor = UIColor.blue
         resetButton.isEnabled = false
+    }
+    
+    func sendNotif() {
+        let content = UNMutableNotificationContent()
+        content.title = "Timer"
+        content.body = "Times Up!!!"
+        content.sound = UNNotificationSound.default
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+        center.add(request) { (error: Error?) in
+            if let error_ = error {
+                print(error_.localizedDescription)
+            }
+        }
     }
 }

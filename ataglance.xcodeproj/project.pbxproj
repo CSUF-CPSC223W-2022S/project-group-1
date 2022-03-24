@@ -17,6 +17,9 @@
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
 		B557483227C71D490036D892 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B557483127C71D490036D892 /* .gitignore */; };
+		E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */; };
+		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
+		E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A627EC37A2000E4F01 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		B557482227C71B0D0036D892 /* ataglanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITests.swift; sourceTree = "<group>"; };
 		B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B557483127C71D490036D892 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "notification storyboard.storyboard"; sourceTree = "<group>"; };
+		E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E16DD5A627EC37A2000E4F01 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,9 @@
 		B557480027C71B090036D892 /* ataglance */ = {
 			isa = PBXGroup;
 			children = (
+				E16DD5A127EC3610000E4F01 /* notification storyboard */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
+				E16DD5A627EC37A2000E4F01 /* Notifications.swift */,
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
 				B557480727C71B090036D892 /* Main.storyboard */,
@@ -128,6 +136,15 @@
 				B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */,
 			);
 			path = ataglanceUITests;
+			sourceTree = "<group>";
+		};
+		E16DD5A127EC3610000E4F01 /* notification storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */,
+				E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */,
+			);
+			path = "notification storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +255,7 @@
 				B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
 				B557480927C71B090036D892 /* Main.storyboard in Resources */,
+				E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */,
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
+				E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

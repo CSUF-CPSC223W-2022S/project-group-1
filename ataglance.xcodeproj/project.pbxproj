@@ -19,6 +19,10 @@
 		B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557481827C71B0D0036D892 /* ataglanceTests.swift */; };
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
+		B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */; };
+		B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3ED27D93AFB0035206B /* MQViewController.swift */; };
+		B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */; };
+		B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */; };
 		B557483227C71D490036D892 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B557483127C71D490036D892 /* .gitignore */; };
 		E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */; };
 		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
@@ -61,6 +65,10 @@
 		B557481E27C71B0D0036D892 /* ataglanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ataglanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B557482227C71B0D0036D892 /* ataglanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITests.swift; sourceTree = "<group>"; };
 		B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivQuotes.swift; sourceTree = "<group>"; };
+		B71DA3ED27D93AFB0035206B /* MQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQViewController.swift; sourceTree = "<group>"; };
+		B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivQuotesTest.swift; sourceTree = "<group>"; };
+		B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motivationalQuotes.storyboard; sourceTree = "<group>"; };
 		B557483127C71D490036D892 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "notification storyboard.storyboard"; sourceTree = "<group>"; };
 		E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 		B557480027C71B090036D892 /* ataglance */ = {
 			isa = PBXGroup;
 			children = (
+				B7189C4D27D7D89F0046A189 /* MotivationalQuotes */,
 				E16DD5A127EC3610000E4F01 /* notification storyboard */,
 				A035A38D27E6E2130040668C /* TodoListFeature */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
@@ -146,6 +155,7 @@
 		B557481727C71B0D0036D892 /* ataglanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				B7189C5027D7DA480046A189 /* MotivationalQuotesTests */,
 				B557481827C71B0D0036D892 /* ataglanceTests.swift */,
 				A038CFC527EBE6F900066493 /* TodoListTest.swift */,
 			);
@@ -161,6 +171,22 @@
 			path = ataglanceUITests;
 			sourceTree = "<group>";
 		};
+		B7189C4D27D7D89F0046A189 /* MotivationalQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */,
+				B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */,
+				B71DA3ED27D93AFB0035206B /* MQViewController.swift */,
+			);
+			path = MotivationalQuotes;
+			sourceTree = "<group>";
+		};
+		B7189C5027D7DA480046A189 /* MotivationalQuotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
+			);
+			path = MotivationalQuotesTests;
 		E16DD5A127EC3610000E4F01 /* notification storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B557483227C71D490036D892 /* .gitignore in Resources */,
+				B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */,
 				B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
 				B557480927C71B090036D892 /* Main.storyboard in Resources */,
@@ -304,10 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */,
 				E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */,
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				A08203C827EBDCC800F7AEF6 /* Todo List Class .swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
+				B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
 				E16DD5A927ECAA13000E4F01 /* NotificationHelpers.swift in Sources */,
 				E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */,
@@ -318,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */,
 				E16DD5AB27ECAAAD000E4F01 /* NotificationTestCases.swift in Sources */,
 				B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */,
 				A038CFC727EBE74700066493 /* TodoListTest.swift in Sources */,

@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-VR-fWn">
+                                <rect key="frame" x="131" y="709" width="153" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Motivational Quotes"/>
+                                <connections>
+                                    <segue destination="JjP-q9-6TS" kind="show" id="kOe-Jb-QWw"/>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-vm-R7Q">
                                 <rect key="frame" x="142" y="466" width="131" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,6 +46,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="60"/>
+        </scene>
+        <!--motivationalQuotes-->
+        <scene sceneID="7Ja-6P-GXP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="motivationalQuotes" id="JjP-q9-6TS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m59-XT-BFw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVU-1b-9S0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="67"/>
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
         <!--notification storyboard-->

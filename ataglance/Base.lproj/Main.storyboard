@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-vm-R7Q">
+                                <rect key="frame" x="142" y="466" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set Notifications"/>
+                                <connections>
+                                    <segue destination="LeM-pn-lTO" kind="show" id="It8-qI-Et8"/>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-k6-DRx">
                                 <rect key="frame" x="127" y="435" width="161" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,6 +39,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--notification storyboard-->
+        <scene sceneID="FtY-v4-FWv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="notification storyboard" id="LeM-pn-lTO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uch-wt-Lh2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ae-R8-ljn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="126"/>
             <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
         </scene>
         <!--Todo List Storyboard-->

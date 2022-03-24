@@ -19,52 +19,94 @@ import UIKit
 
 //Checkpoint 3: Add the swift UIKIT and organize the way I want my UI storyboard to look like
 
-class Todolist {
+class Todolist: UIViewController, UITableViewDataSource {
     
-    //moved to view controller
-    //creates an empty array of the todo list
-    var todos:[String] = []
-    
-    // moved to view controller
-    //adds users todo's onto the array
-    func todoadd(todo:String) {
-        todos.append(todo)
+    @IBOutlet var tableView: UITableView!
+
+    //@breif: Tableview that displays the cells of rows in the feature
+    private let table: UITableView = {
+        let table = UITableView()
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return table
+    }()
+
+    // @Brief: Contains an empty array to hold the tasks the user inputs.
+    var tasks = [String]()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tasks = UserDefaults.standard.stringArray(forKey:"tasks") ?? []
+
+        // displays the title of the todo list storyboard
+        title = "Todo List 📝"
+        view.addSubview(table)
+
+        // table views property. Self = data will be provided
+        table.dataSource = self
+        // adds button to the right hand side of the UI
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
     }
     
-    //Prints the users todos array list
-    func TodoListPrint() {
-        todos.forEach { todo in
-            print("Todo: \(todo)")
+
+    // @Breif: Displays the add button on the right side of the screen
+    @objc private func didTapAdd() {
+        let popup = UIAlertController(title: "Add", message: "Please enter new task: ", preferredStyle: .alert)
+
+        // @Brief: Adds a task field onto the popup
+        popup.addTextField { field in
+            field.placeholder = "Enter a task...."
         }
-    }
-    
-    //@Breif: function removes from the index that is pressed. If the array is empty then the function will return "Your Todo List is empty today. 😃"
-    func removeindex(index:Int) {
-        if todos.isEmpty {
-            print("Your Todo List is empty today. 😃")
-        } else {
-            todos.remove(at:index)
-        }
-    }
-    
-    //moved to viewcontroller
-    //@Breif: Function replaces the old task in todo list to a newTask
-    func changeNameOfTask(index: Int, newTask: String) {
-        for tasks in 0..<todos.count {
-            if tasks == index {
-                todos[tasks] = newTask
+
+        // @Brief: Displays "Cancel" button on popup
+        popup.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        // @Breif: Displays "Save" button on popup. Gets the input of the
+        popup.addAction(UIAlertAction(title: "Save", style: .default, handler: { [weak self] _ in
+            if let field = popup.textFields?.first {
+                if let text = field.text, !text.isEmpty {
+                    // new todo task onto the cell
+                    DispatchQueue.main.async {
+                        //Saves all the tasks in the list in the tableview.
+                        var assertcurrentItems = UserDefaults.standard.stringArray(forKey:"tasks") ?? []
+                        assertcurrentItems.append(text)
+                        UserDefaults.standard.setValue(assertcurrentItems, forKey: "tasks")
+                        self?.tasks.append(text)
+                        self?.table.reloadData()
+                    }
+                }
             }
-        }
+        }))
+        present(popup, animated: true)
     }
     
-    //moved to viewcontroller
-    //@Breif: Counts the amount of things in the list.
-    func countTodoTasks() {
-        var count = 0
-        for _ in 0..<todos.count {
-            count+=1
-        }
-        print("You have \(count) tasks today.")
+    //@breif: Displays the text on the cell
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        table.frame = view.bounds
     }
+    
+    //Supplies data to the tableview. Includes both count and cell index selection
+
+    // @Breif: Displays the amount of tasks inside the todo list
+    // @param: Int
+    // @returns: the total amount of tasks in the table view.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+
+    //  @Breif: Creates an Id for a cell.
+    //  @param: String to register
+    //  @return: asserts the text into the cell in the nth term.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // supply datacell data
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        // item in the ith position.
+        cell.textLabel?.text = tasks[indexPath.row]
+
+        return cell
+    }
+    
+    
 
 }

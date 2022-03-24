@@ -8,20 +8,19 @@
 import Foundation
 
 class Notifications {
-    var notifMessages: [String] = []
-    var notifTime: [String] = []
+    var messages: notificationMessages
+    var times: notificationTime
     var notifNumber: Int
-    var test: Int
+    
     
     init() {
-        notifNumber = 0
-        notifMessages = []
-        notifTime = []
+         times = .init()
+        messages = .init()
     }
 
     func addNotification(time: String, message: String) {
-        notifMessages.append(message)
-        notifTime.append(time)
+        times.addTime(time: time)
+        messages.addMessage(message: message)
         notifNumber += 1
     }
 

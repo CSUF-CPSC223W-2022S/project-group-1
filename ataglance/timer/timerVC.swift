@@ -86,5 +86,6 @@ class timerVC: UIViewController {
         timer_.invalidate()
         startButton.setTitle("Start", for: .normal)
         startButton.tintColor = UIColor.blue
+        resetButton.isEnabled = false
     }
 }

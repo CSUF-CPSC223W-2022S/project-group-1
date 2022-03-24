@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A035A39127E6E2EA0040668C /* Todo List Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A035A39027E6E2EA0040668C /* Todo List Storyboard.storyboard */; };
+		A038CFC727EBE74700066493 /* TodoListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038CFC527EBE6F900066493 /* TodoListTest.swift */; };
+		A08203C827EBDCC800F7AEF6 /* Todo List Class .swift in Sources */ = {isa = PBXBuildFile; fileRef = A08203C727EBDCC800F7AEF6 /* Todo List Class .swift */; };
 		B557480227C71B090036D892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480127C71B090036D892 /* AppDelegate.swift */; };
 		B557480427C71B090036D892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480327C71B090036D892 /* SceneDelegate.swift */; };
 		B557480627C71B090036D892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480527C71B090036D892 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A035A39027E6E2EA0040668C /* Todo List Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Todo List Storyboard.storyboard"; sourceTree = "<group>"; };
+		A038CFC527EBE6F900066493 /* TodoListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTest.swift; sourceTree = "<group>"; };
+		A08203C727EBDCC800F7AEF6 /* Todo List Class .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo List Class .swift"; sourceTree = "<group>"; };
 		B55747FE27C71B090036D892 /* ataglance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ataglance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B557480127C71B090036D892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B557480327C71B090036D892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A035A38D27E6E2130040668C /* TodoListFeature */ = {
+			isa = PBXGroup;
+			children = (
+				A035A39027E6E2EA0040668C /* Todo List Storyboard.storyboard */,
+				A08203C727EBDCC800F7AEF6 /* Todo List Class .swift */,
+			);
+			path = TodoListFeature;
+			sourceTree = "<group>";
+		};
 		B55747F527C71B090036D892 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +116,7 @@
 		B557480027C71B090036D892 /* ataglance */ = {
 			isa = PBXGroup;
 			children = (
+				A035A38D27E6E2130040668C /* TodoListFeature */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
@@ -117,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B557481827C71B0D0036D892 /* ataglanceTests.swift */,
+				A038CFC527EBE6F900066493 /* TodoListTest.swift */,
 			);
 			path = ataglanceTests;
 			sourceTree = "<group>";
@@ -238,6 +255,7 @@
 				B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
 				B557480927C71B090036D892 /* Main.storyboard in Resources */,
+				A035A39127E6E2EA0040668C /* Todo List Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
+				A08203C827EBDCC800F7AEF6 /* Todo List Class .swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
 			);
@@ -273,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */,
+				A038CFC727EBE74700066493 /* TodoListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU24D8HEB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ataglance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU24D8HEB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ataglance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-aU-OtI">
+                                <rect key="frame" x="20" y="771" width="61" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Timer"/>
+                                <connections>
+                                    <segue destination="sbM-rD-UdD" kind="show" id="hE1-bb-JgY"/>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-VR-fWn">
                                 <rect key="frame" x="131" y="709" width="153" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,6 +53,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-16" y="74"/>
+        </scene>
+        <!--timerSB-->
+        <scene sceneID="geb-fT-hQY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="timerSB" id="sbM-rD-UdD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ofA-ex-lHh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1W-0Z-bGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="133"/>
             <point key="canvasLocation" x="133" y="60"/>
         </scene>
         <!--motivationalQuotes-->

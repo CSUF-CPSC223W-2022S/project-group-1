@@ -24,6 +24,9 @@
 		B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */; };
 		B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */; };
 		B557483227C71D490036D892 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B557483127C71D490036D892 /* .gitignore */; };
+		B774148E27E0FA1F00D8DACC /* timerSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B774148D27E0FA1F00D8DACC /* timerSB.storyboard */; };
+		B774149027E0FA3700D8DACC /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774148F27E0FA3700D8DACC /* timerVC.swift */; };
+		B774149227E0FA6D00D8DACC /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774149127E0FA6D00D8DACC /* timer.swift */; };
 		E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */; };
 		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
 		E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A627EC37A2000E4F01 /* Notifications.swift */; };
@@ -70,6 +73,9 @@
 		B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivQuotesTest.swift; sourceTree = "<group>"; };
 		B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motivationalQuotes.storyboard; sourceTree = "<group>"; };
 		B557483127C71D490036D892 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B774148D27E0FA1F00D8DACC /* timerSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = timerSB.storyboard; sourceTree = "<group>"; };
+		B774148F27E0FA3700D8DACC /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
+		B774149127E0FA6D00D8DACC /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
 		E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "notification storyboard.storyboard"; sourceTree = "<group>"; };
 		E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		E16DD5A627EC37A2000E4F01 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		B557480027C71B090036D892 /* ataglance */ = {
 			isa = PBXGroup;
 			children = (
+				B774148C27E0FA0400D8DACC /* timer */,
 				B7189C4D27D7D89F0046A189 /* MotivationalQuotes */,
 				E16DD5A127EC3610000E4F01 /* notification storyboard */,
 				A035A38D27E6E2130040668C /* TodoListFeature */,
@@ -171,6 +178,14 @@
 			path = ataglanceUITests;
 			sourceTree = "<group>";
 		};
+		B774148C27E0FA0400D8DACC /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				B774148D27E0FA1F00D8DACC /* timerSB.storyboard */,
+				B774148F27E0FA3700D8DACC /* timerVC.swift */,
+				B774149127E0FA6D00D8DACC /* timer.swift */,
+			);
+			path = timer;
 		B7189C4D27D7D89F0046A189 /* MotivationalQuotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B774148E27E0FA1F00D8DACC /* timerSB.storyboard in Resources */,
+				B557483227C71D490036D892 /* .gitignore in Resources */,
 				B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */,
 				B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
@@ -335,6 +352,8 @@
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				A08203C827EBDCC800F7AEF6 /* Todo List Class .swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
+				B774149227E0FA6D00D8DACC /* timer.swift in Sources */,
+				B774149027E0FA3700D8DACC /* timerVC.swift in Sources */,
 				B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
 				E16DD5A927ECAA13000E4F01 /* NotificationHelpers.swift in Sources */,

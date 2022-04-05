@@ -186,6 +186,7 @@
 				B774149127E0FA6D00D8DACC /* timer.swift */,
 			);
 			path = timer;
+		};
 		B7189C4D27D7D89F0046A189 /* MotivationalQuotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +203,7 @@
 				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
 			);
 			path = MotivationalQuotesTests;
+		};
 		E16DD5A127EC3610000E4F01 /* notification storyboard */ = {
 			isa = PBXGroup;
 			children = (

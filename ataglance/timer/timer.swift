@@ -47,6 +47,7 @@ class CTimer {
             } else {
                 hour -= 1
                 minute = 59
+                second = 59
             }
         }
         return true

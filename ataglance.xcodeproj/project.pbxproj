@@ -140,11 +140,9 @@
 			children = (
 				B774148C27E0FA0400D8DACC /* timer */,
 				B7189C4D27D7D89F0046A189 /* MotivationalQuotes */,
-				E16DD5A127EC3610000E4F01 /* notification storyboard */,
+				E16DD5A127EC3610000E4F01 /* notifications */,
 				A035A38D27E6E2130040668C /* TodoListFeature */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
-				E16DD5A827ECAA13000E4F01 /* NotificationHelpers.swift */,
-				E16DD5A627EC37A2000E4F01 /* Notifications.swift */,
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
 				B557480727C71B090036D892 /* Main.storyboard */,
@@ -203,13 +201,15 @@
 			path = timer;
 			sourceTree = "<group>";
 		};
-		E16DD5A127EC3610000E4F01 /* notification storyboard */ = {
+		E16DD5A127EC3610000E4F01 /* notifications */ = {
 			isa = PBXGroup;
 			children = (
 				E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */,
+				E16DD5A627EC37A2000E4F01 /* Notifications.swift */,
+				E16DD5A827ECAA13000E4F01 /* NotificationHelpers.swift */,
 				E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */,
 			);
-			path = "notification storyboard";
+			path = notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

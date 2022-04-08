@@ -10,7 +10,7 @@ import Foundation
 // .year, .month, .day, .hour, .minute
 
 
-class Notification {
+class Notification: Equatable {
     
     var title: String
     var message: String
@@ -68,9 +68,22 @@ class Notification {
     func changeNotificationTitle(newTitle: String ) {
                 title = newTitle
             }
+    
+    static func == (lhs: Notification, rhs: Notification ) -> Bool {
+            return
+                lhs.title == rhs.title &&
+                lhs.message == rhs.message &&
+                lhs.year == rhs.year &&
+        lhs.month == rhs.month &&
+        lhs.day == rhs.day &&
+        lhs.hour == rhs.hour &&
+        lhs.minute == rhs.minute
+        
+        }
+    
 }
 
-class NotificationList {
+class NotificationList{
     var notifications: [Notification] = []
     var notificationCount: Int
     
@@ -90,14 +103,22 @@ class NotificationList {
 
     func deleteNotification(Notification: Notification) {
         let index = notifications.firstIndex(of: Notification)
-        if index >= 0 {
-            notifications.remove(at: index)
+        if let indexvalue = index  {
+            notifications.remove(at: indexvalue)
             notificationCount -= 1
         } else {
             print("Notification does not exist")
         }
     }
-
     
+//    func findNotification(Notification: Notification) {
+//    let index = notifications.firstIndex(of: Notification)
+//    if let indexvalue = index  {
+//
+//    } else {
+//        print("Notification does not exist")
+//        return
+//    }
+//    }
 }
     

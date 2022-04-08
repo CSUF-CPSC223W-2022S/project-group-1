@@ -15,6 +15,9 @@ class NotificationsViewController: UIViewController
     @IBOutlet var messageTF: UITextField!
     @IBOutlet var titleTF: UITextField!
     
+    
+    let notificationList = NotificationList()
+    
     let notificationCenter = UNUserNotificationCenter.current()
     
     override func viewDidLoad()
@@ -40,6 +43,9 @@ class NotificationsViewController: UIViewController
                 let message = self.messageTF.text!
                 let date = self.datePicker.date
                 
+                
+                
+                
                 if(settings.authorizationStatus == .authorized)
                 {
                     let content = UNMutableNotificationContent()
@@ -47,6 +53,15 @@ class NotificationsViewController: UIViewController
                     content.body = message
                     
                     let dateComp = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+                    
+                    
+                    let newNotification = Notification(title: title, message: message, year: dateComp.year!, month: dateComp.month!, day: dateComp.day! , hour: dateComp.hour!, minute: dateComp.minute!)
+                    
+                    
+                    self.notificationList.addNotification(newNotification: newNotification)
+                    
+                
+                    
                     
                     let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
                     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)

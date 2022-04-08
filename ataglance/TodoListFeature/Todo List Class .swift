@@ -8,22 +8,20 @@
 import Foundation
 import UIKit
 
-//Things To add on todo list class
-//1. Array to keep all the tasks to do in todo list.
-//2. A way to mark as task completed.
-//3. A way to delete a task.
-//4. A way to display the tasks in the array.
-//5. A way to replace existing task to something else.
-//6. A way to display how many tasks the user has in the todo list.
-//7. Maintain a way to keep the tasks when app is closed.
+// Things To add on todo list class
+// 1. Array to keep all the tasks to do in todo list.
+// 2. A way to mark as task completed.
+// 3. A way to delete a task.
+// 4. A way to display the tasks in the array.
+// 5. A way to replace existing task to something else.
+// 6. A way to display how many tasks the user has in the todo list.
+// 7. Maintain a way to keep the tasks when app is closed.
 
-//Checkpoint 3: Add the swift UIKIT and organize the way I want my UI storyboard to look like
+// Checkpoint 3: Add the swift UIKIT and organize the way I want my UI storyboard to look like
 
 class Todolist: UIViewController, UITableViewDataSource {
-    
     @IBOutlet var tableView: UITableView!
-
-    //@breif: Tableview that displays the cells of rows in the feature
+    // @breif: Tableview that displays the cells of rows in the feature
     private let table: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -35,18 +33,18 @@ class Todolist: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tasks = UserDefaults.standard.stringArray(forKey:"tasks") ?? []
+        tasks = UserDefaults.standard.stringArray(forKey: "tasks") ?? []
 
         // displays the title of the todo list storyboard
-        title = "Todo List 📝"
+        title = "Today's Todo List 📝"
         view.addSubview(table)
 
         // table views property. Self = data will be provided
         table.dataSource = self
-        // adds button to the right hand side of the UI
+        // adds button to the right/left hand side of the page
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(edit(_:)))
     }
-    
 
     // @Breif: Displays the add button on the right side of the screen
     @objc private func didTapAdd() {
@@ -66,8 +64,8 @@ class Todolist: UIViewController, UITableViewDataSource {
                 if let text = field.text, !text.isEmpty {
                     // new todo task onto the cell
                     DispatchQueue.main.async {
-                        //Saves all the tasks in the list in the tableview.
-                        var assertcurrentItems = UserDefaults.standard.stringArray(forKey:"tasks") ?? []
+                        // Saves all the tasks in the list in the tableview.
+                        var assertcurrentItems = UserDefaults.standard.stringArray(forKey: "tasks") ?? []
                         assertcurrentItems.append(text)
                         UserDefaults.standard.setValue(assertcurrentItems, forKey: "tasks")
                         self?.tasks.append(text)
@@ -78,14 +76,14 @@ class Todolist: UIViewController, UITableViewDataSource {
         }))
         present(popup, animated: true)
     }
-    
-    //@breif: Displays the text on the cell
+
+    // @breif: Displays the text on the cell
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         table.frame = view.bounds
     }
-    
-    //Supplies data to the tableview. Includes both count and cell index selection
+
+    // Supplies data to the tableview. Includes both count and cell index selection
 
     // @Breif: Displays the amount of tasks inside the todo list
     // @param: Int
@@ -100,13 +98,49 @@ class Todolist: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // supply datacell data
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
         // item in the ith position.
         cell.textLabel?.text = tasks[indexPath.row]
-
         return cell
     }
-    
-    
 
+    // Check-in #4
+    // insert edit and remove swipe
+    // Test Cases
+    // Work on how we want the mainscreen to look like.
+    // Pick a font for the project
+    
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let moveobject = tasks[sourceIndexPath.row]
+        tasks.remove(at: sourceIndexPath.row)
+        tasks.insert(moveobject, at: destinationIndexPath.row)
+    }
+    
+    //@Breif: Remove Functionality
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexpath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    //@Breif: Removes data from task list.
+    //@param: tableview
+    //return: modified task list
+   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath) {
+        if editingStyle == .delete {
+            //removes task
+            tasks.remove(at:indexPath.row)
+            //Delete Row at index
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.reloadData()
+        }
+    }
+    
+    @IBAction func editButtonPressed(_ sender: UIBarButtonItem) {
+        if tableView.isEditing {
+            tableView.setEditing(false, animated:true)
+            sender.title = "Edit"
+        } else {
+            tableView.setEditing(true, animated: true)
+            sender.title = "Done"
+        }
+    }
 }

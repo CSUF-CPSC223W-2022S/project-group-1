@@ -15,11 +15,12 @@ class MQViewController: UIViewController {
         // Do any additional setup after loading the view.
         // initiate MQ db and mgr
         mqMgr = MotivationalQuotesMgr()
-        quoteText.text = mqMgr?.nextQuote()
+        updateQuote()
     }
     
     var mqMgr: MotivationalQuotesMgr?
     @IBOutlet var quoteText: UILabel!
+    @IBOutlet var authorText: UILabel!
     
     /*
     // MARK: - Navigation
@@ -31,7 +32,18 @@ class MQViewController: UIViewController {
     }
     */
     @IBAction func pressNextQuote(_ sender: Any) {
-        quoteText.text = mqMgr?.nextQuote()
+        updateQuote()
+    }
+    
+    func updateQuote() {
+        mqMgr?.nextQuoteAPI { (info) in
+            DispatchQueue.main.async {
+                let quote = info?[0]["q"]
+                let author = info?[0]["a"]
+                self.quoteText.text = quote as! String
+                self.authorText.text = author as! String
+            }
+        }
     }
     
 }

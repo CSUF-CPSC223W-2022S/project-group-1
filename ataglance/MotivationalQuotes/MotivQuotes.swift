@@ -17,16 +17,16 @@ class MotivationalQuotesDB {
         numOfQuotes = 0
     }
     
-    // hardcode quotes
-    init(description: String) {
-        quotes = ["Insanity: doing the same thing over and over again and expecting different results.",
-                 "Don't blame others. it won't make you a better person.",
-                 "I would rather be a little nobody, then to be an evil somebody.",
-                 "It is impossible for a man to learn what he thinks he already knows.",
-                 "Do what is right, not what is easy, nor what is popular.",
-                 "Reading should be a pleasure, not a chore."]
-        numOfQuotes = 5
-    }
+//    // hardcode quotes
+//    init(description: String) {
+//        quotes = ["Insanity: doing the same thing over and over again and expecting different results.",
+//                 "Don't blame others. it won't make you a better person.",
+//                 "I would rather be a little nobody, then to be an evil somebody.",
+//                 "It is impossible for a man to learn what he thinks he already knows.",
+//                 "Do what is right, not what is easy, nor what is popular.",
+//                 "Reading should be a pleasure, not a chore."]
+//        numOfQuotes = 5
+//    }
 }
 
 class MotivationalQuotesMgr {
@@ -35,13 +35,29 @@ class MotivationalQuotesMgr {
     
     // hardcode quotes
     init() {
-        mqDB = MotivationalQuotesDB(description: "hardcode")
+        mqDB = MotivationalQuotesDB()
         currentQuoteInd = 0
     }
     
-    func nextQuote() -> String {
-        let currentQuote = mqDB.quotes[currentQuoteInd % mqDB.numOfQuotes]
-        currentQuoteInd += 1
-        return currentQuote
+//    func nextQuote() -> String {
+//        let currentQuote = mqDB.quotes[currentQuoteInd % mqDB.numOfQuotes]
+//        currentQuoteInd += 1
+//        return currentQuote
+//    }
+    // api call
+    func nextQuoteAPI(completion: @escaping ([AnyObject]?) -> Void) {
+        let baseURL = URL(string: "https://zenquotes.io/api/random")!
+        let task = URLSession.shared.dataTask(with: baseURL) {
+            (data, response, error) in
+            do {
+                if let dataDict = try JSONSerialization.jsonObject(with: data!, options: []) as? [AnyObject] {
+                    completion(dataDict)
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
     }
 }
+

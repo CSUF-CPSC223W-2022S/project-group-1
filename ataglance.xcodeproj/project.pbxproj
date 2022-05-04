@@ -12,7 +12,6 @@
 		B557480627C71B090036D892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480527C71B090036D892 /* ViewController.swift */; };
 		B557480927C71B090036D892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B557480727C71B090036D892 /* Main.storyboard */; };
 		B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B557480A27C71B0C0036D892 /* Assets.xcassets */; };
-		B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B557480C27C71B0D0036D892 /* LaunchScreen.storyboard */; };
 		B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557481827C71B0D0036D892 /* ataglanceTests.swift */; };
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
@@ -47,7 +46,6 @@
 		B557480527C71B090036D892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B557480827C71B090036D892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B557480A27C71B0C0036D892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B557480D27C71B0D0036D892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B557480F27C71B0D0036D892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B557481427C71B0D0036D892 /* ataglanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ataglanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B557481827C71B0D0036D892 /* ataglanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceTests.swift; sourceTree = "<group>"; };
@@ -110,12 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				B5C696F428218DEE0045DD9F /* CalendarGroup */,
+				B557480727C71B090036D892 /* Main.storyboard */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
-				B557480727C71B090036D892 /* Main.storyboard */,
 				B557480A27C71B0C0036D892 /* Assets.xcassets */,
-				B557480C27C71B0D0036D892 /* LaunchScreen.storyboard */,
 				B557480F27C71B0D0036D892 /* Info.plist */,
 				B557483127C71D490036D892 /* .gitignore */,
 			);
@@ -256,7 +253,6 @@
 			files = (
 				B5CBD8C7282337060073F367 /* CalendarView.storyboard in Resources */,
 				B557483227C71D490036D892 /* .gitignore in Resources */,
-				B557480E27C71B0D0036D892 /* LaunchScreen.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
 				B557480927C71B090036D892 /* Main.storyboard in Resources */,
 			);
@@ -331,14 +327,6 @@
 				B557480827C71B090036D892 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B557480C27C71B0D0036D892 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B557480D27C71B0D0036D892 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

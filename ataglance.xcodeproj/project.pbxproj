@@ -26,10 +26,13 @@
 		B774149027E0FA3700D8DACC /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774148F27E0FA3700D8DACC /* timerVC.swift */; };
 		B774149227E0FA6D00D8DACC /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774149127E0FA6D00D8DACC /* timer.swift */; };
 		B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */; };
+		E132FDE42822261700594354 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132FDE32822261700594354 /* TableViewCell.swift */; };
+		E132FDE628238B2200594354 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132FDE528238B2100594354 /* HomeViewController.swift */; };
 		E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */; };
 		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
 		E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A627EC37A2000E4F01 /* Notifications.swift */; };
 		E16DD5AB27ECAAAD000E4F01 /* NotificationTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */; };
+		E18781B62821918E009C1A91 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18781B52821918E009C1A91 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +76,13 @@
 		B774148F27E0FA3700D8DACC /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
 		B774149127E0FA6D00D8DACC /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
 		B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motivationalQuotes.storyboard; sourceTree = "<group>"; };
+		E132FDE32822261700594354 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E132FDE528238B2100594354 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "notification storyboard.storyboard"; sourceTree = "<group>"; };
 		E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		E16DD5A627EC37A2000E4F01 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTestCases.swift; sourceTree = "<group>"; };
+		E18781B52821918E009C1A91 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +211,9 @@
 				E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */,
 				E16DD5A627EC37A2000E4F01 /* Notifications.swift */,
 				E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */,
+				E18781B52821918E009C1A91 /* TableViewController.swift */,
+				E132FDE32822261700594354 /* TableViewCell.swift */,
+				E132FDE528238B2100594354 /* HomeViewController.swift */,
 			);
 			path = notifications;
 			sourceTree = "<group>";
@@ -350,9 +359,12 @@
 				A08203C827EBDCC800F7AEF6 /* Todo List Class .swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
 				B774149227E0FA6D00D8DACC /* timer.swift in Sources */,
+				E18781B62821918E009C1A91 /* TableViewController.swift in Sources */,
 				B774149027E0FA3700D8DACC /* timerVC.swift in Sources */,
 				B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */,
+				E132FDE42822261700594354 /* TableViewCell.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
+				E132FDE628238B2200594354 /* HomeViewController.swift in Sources */,
 				E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,7 @@ import Foundation
 
 // .year, .month, .day, .hour, .minute
 
-
 class Notification: Equatable {
-    
     var title: String
     var message: String
     var year: Int
@@ -20,8 +18,8 @@ class Notification: Equatable {
     var hour: Int
     var minute: Int
     
-    init(title: String, message: String,year: Int,month: Int,day: Int,hour: Int,minute: Int) {
-        self.title  = title
+    init(title: String, message: String, year: Int, month: Int, day: Int, hour: Int, minute: Int) {
+        self.title = title
         self.message = message
         self.year = year
         self.month = month
@@ -33,21 +31,27 @@ class Notification: Equatable {
     func getTitle() -> String {
         return title
     }
+
     func getMessage() -> String {
         return message
     }
+
     func getYear() -> Int {
         return year
     }
+
     func getMonth() -> Int {
         return month
     }
-    func getDay() -> Int{
+
+    func getDay() -> Int {
         return day
     }
+
     func getHour() -> Int {
         return hour
     }
+
     func getMinute() -> Int {
         return minute
     }
@@ -57,33 +61,34 @@ class Notification: Equatable {
     }
 
     func changeNotificationDate(newYear: Int, newMonth: Int, newDay: Int, newHour: Int, newMinute: Int) {
-       year = newYear
-       month = newMonth
-       day = newDay
+        year = newYear
+        month = newMonth
+        day = newDay
         hour = newHour
         minute = newMinute
-        
+    }
+    
+    func getNotificationDate() -> String {
+        return "\(hour):\(minute)  \(day)/\(month)/\(year) "
     }
 
-    func changeNotificationTitle(newTitle: String ) {
-                title = newTitle
-            }
+    func changeNotificationTitle(newTitle: String) {
+        title = newTitle
+    }
     
-    static func == (lhs: Notification, rhs: Notification ) -> Bool {
-            return
-                lhs.title == rhs.title &&
-                lhs.message == rhs.message &&
-                lhs.year == rhs.year &&
-        lhs.month == rhs.month &&
-        lhs.day == rhs.day &&
-        lhs.hour == rhs.hour &&
-        lhs.minute == rhs.minute
-        
-        }
-    
+    static func == (lhs: Notification, rhs: Notification) -> Bool {
+        return
+            lhs.title == rhs.title &&
+            lhs.message == rhs.message &&
+            lhs.year == rhs.year &&
+            lhs.month == rhs.month &&
+            lhs.day == rhs.day &&
+            lhs.hour == rhs.hour &&
+            lhs.minute == rhs.minute
+    }
 }
 
-class NotificationList{
+class NotificationList {
     var notifications: [Notification] = []
     var notificationCount: Int
     
@@ -92,10 +97,6 @@ class NotificationList{
         notificationCount = 0
     }
     
-    
-    
-
-
     func addNotification(newNotification: Notification) {
         notifications.append(newNotification)
         notificationCount += 1
@@ -103,7 +104,7 @@ class NotificationList{
 
     func deleteNotification(Notification: Notification) {
         let index = notifications.firstIndex(of: Notification)
-        if let indexvalue = index  {
+        if let indexvalue = index {
             notifications.remove(at: indexvalue)
             notificationCount -= 1
         } else {

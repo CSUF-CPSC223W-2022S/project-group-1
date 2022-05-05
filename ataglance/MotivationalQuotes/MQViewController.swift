@@ -21,6 +21,7 @@ class MQViewController: UIViewController {
     var mqMgr: MotivationalQuotesMgr?
     @IBOutlet var quoteText: UILabel!
     @IBOutlet var authorText: UILabel!
+    @IBOutlet var quoteImage: UIImageView!
     
     /*
     // MARK: - Navigation
@@ -42,6 +43,19 @@ class MQViewController: UIViewController {
                 let author = info?[0]["a"]
                 self.quoteText.text = quote as! String
                 self.authorText.text = author as! String
+                self.mqMgr?.getQuoteImageURL { (info) in
+                    DispatchQueue.main.async {
+                        if let imgURL = info["urls"] as? NSDictionary {
+                            let URL = URL(string: (imgURL["regular"] as! String).components(separatedBy: "?")[0])
+                            self.mqMgr?.getQuoteImage(imgURL: URL!) {
+                                (image) -> Void in
+                                DispatchQueue.main.async {
+                                    self.quoteImage.image = image
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MotivationalQuotesDB {
     var quotes: [String]
@@ -55,6 +56,35 @@ class MotivationalQuotesMgr {
                 }
             } catch let error as NSError {
                 print(error.localizedDescription)
+            }
+        }
+        task.resume()
+    }
+    
+    func getQuoteImageURL(completion: @escaping (NSDictionary) -> Void) {
+        var baseURL = URLComponents(string: "https://api.unsplash.com/photos/random")!
+        baseURL.queryItems = [
+            URLQueryItem(name: "client_id", value: "yfRPl3Ydtd6KJJ_3xK5AQ2bh3bVj2zDA13hVDm_Bryc")
+        ]
+        let request = URLRequest(url: baseURL.url!)
+        let task = URLSession.shared.dataTask(with: request) {
+            (data, response, error) in
+            do {
+                if let dataDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                    completion(dataDict)
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
+    }
+
+    func getQuoteImage(imgURL: URL, completion: @escaping (UIImage?)->Void) {
+        let task = URLSession.shared.dataTask(with: imgURL) {
+            (data, response, error) in
+            if let image = UIImage(data: data!) {
+                completion(image)
             }
         }
         task.resume()

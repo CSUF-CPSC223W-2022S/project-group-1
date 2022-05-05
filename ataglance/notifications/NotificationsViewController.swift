@@ -14,6 +14,7 @@ class NotificationsViewController: UIViewController
     @IBOutlet var messageTF: UITextField!
     @IBOutlet var titleTF: UITextField!
     
+    // creates a list of notifications that will be passed between multiple view controllers
     var notificationList = NotificationList()
     
     let notificationCenter = UNUserNotificationCenter.current()
@@ -30,7 +31,9 @@ class NotificationsViewController: UIViewController
             }
         }
     }
-
+// method for setting the local notifications in the iphone
+    
+    
     @IBAction func scheduleAction(_ sender: Any)
     {
         notificationCenter.getNotificationSettings

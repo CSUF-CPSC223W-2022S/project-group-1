@@ -7,6 +7,7 @@
 
 import Foundation
 
+//@breif: allows us to save data inputted by the user. 
 struct todoItems: Codable {
     var name: String
     var date: Date

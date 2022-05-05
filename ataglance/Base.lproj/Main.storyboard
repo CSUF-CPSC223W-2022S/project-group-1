@@ -33,6 +33,59 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <segue destination="zbQ-7Q-ciQ" kind="show" id="qeA-WB-lU0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-VR-fWn">
+                                <rect key="frame" x="142" y="149" width="153" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Motivational Quotes"/>
+                                <connections>
+                                    <segue destination="JjP-q9-6TS" kind="show" id="kOe-Jb-QWw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-vm-R7Q">
+                                <rect key="frame" x="142" y="608" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set Notifications"/>
+                                <connections>
+                                    <segue destination="LeM-pn-lTO" kind="show" id="It8-qI-Et8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-k6-DRx">
+                                <rect key="frame" x="127" y="531" width="161" height="26"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-k6-DRx">
+                                <rect key="frame" x="127" y="561" width="161" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Todo List"/>
+                                <connections>
+                                    <segue destination="oDY-4N-gQL" kind="show" identifier="todo List Linker to other UI" id="l1E-8I-VEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-aU-OtI">
+                                <rect key="frame" x="177" y="748" width="61" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Timer"/>
+                                <connections>
+                                    <segue destination="sbM-rD-UdD" kind="show" id="hE1-bb-JgY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At A Glance" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixg-YG-agN">
+                                <rect key="frame" x="108" y="82" width="198" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-vm-R7Q">
+                                <rect key="frame" x="153" y="357" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set Notifications"/>
+                                <connections>
+                                    <segue destination="LeM-pn-lTO" kind="show" id="exT-Uj-lT5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,6 +96,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="69.642857142857139"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="73.660714285714278"/>
+        </scene>
+        <!--timerSB-->
+        <scene sceneID="geb-fT-hQY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="timerSB" id="sbM-rD-UdD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ofA-ex-lHh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1W-0Z-bGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="188"/>
+        </scene>
+        <!--motivationalQuotes-->
+        <scene sceneID="7Ja-6P-GXP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="motivationalQuotes" id="JjP-q9-6TS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m59-XT-BFw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVU-1b-9S0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="135"/>
+        </scene>
+        <!--notification storyboard-->
+        <scene sceneID="FtY-v4-FWv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="notification storyboard" id="LeM-pn-lTO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uch-wt-Lh2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ae-R8-ljn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-76"/>
+        </scene>
+        <!--Todo List Storyboard-->
+        <scene sceneID="Ena-Sf-udc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Todo List Storyboard" id="oDY-4N-gQL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ixn-jI-Y1G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eu4-h7-YS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="25"/>
         </scene>
     </scenes>
     <resources>

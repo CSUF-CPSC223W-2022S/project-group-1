@@ -19,6 +19,7 @@
 		B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557481827C71B0D0036D892 /* ataglanceTests.swift */; };
 		B557482327C71B0D0036D892 /* ataglanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482227C71B0D0036D892 /* ataglanceUITests.swift */; };
 		B557482527C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */; };
+		B711003D27FF374E00A19CE8 /* timerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711003C27FF374E00A19CE8 /* timerTest.swift */; };
 		B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */; };
 		B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3ED27D93AFB0035206B /* MQViewController.swift */; };
 		B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */; };
@@ -67,6 +68,7 @@
 		B557481E27C71B0D0036D892 /* ataglanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ataglanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B557482227C71B0D0036D892 /* ataglanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITests.swift; sourceTree = "<group>"; };
 		B557482427C71B0D0036D892 /* ataglanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataglanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B711003C27FF374E00A19CE8 /* timerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerTest.swift; sourceTree = "<group>"; };
 		B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivQuotes.swift; sourceTree = "<group>"; };
 		B71DA3ED27D93AFB0035206B /* MQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQViewController.swift; sourceTree = "<group>"; };
 		B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivQuotesTest.swift; sourceTree = "<group>"; };
@@ -159,9 +161,10 @@
 		B557481727C71B0D0036D892 /* ataglanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				B7189C5027D7DA480046A189 /* MotivationalQuotesTests */,
+				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
 				B557481827C71B0D0036D892 /* ataglanceTests.swift */,
 				A038CFC527EBE6F900066493 /* TodoListTest.swift */,
+				B711003C27FF374E00A19CE8 /* timerTest.swift */,
 			);
 			path = ataglanceTests;
 			sourceTree = "<group>";
@@ -183,14 +186,6 @@
 				B71DA3ED27D93AFB0035206B /* MQViewController.swift */,
 			);
 			path = MotivationalQuotes;
-			sourceTree = "<group>";
-		};
-		B7189C5027D7DA480046A189 /* MotivationalQuotesTests */ = {
-			isa = PBXGroup;
-			children = (
-				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
-			);
-			path = MotivationalQuotesTests;
 			sourceTree = "<group>";
 		};
 		B774148C27E0FA0400D8DACC /* timer */ = {
@@ -369,6 +364,7 @@
 				E16DD5AB27ECAAAD000E4F01 /* NotificationTestCases.swift in Sources */,
 				B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */,
 				A038CFC727EBE74700066493 /* TodoListTest.swift in Sources */,
+				B711003D27FF374E00A19CE8 /* timerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

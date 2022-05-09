@@ -18,7 +18,7 @@ class timerVC: UIViewController, UNUserNotificationCenterDelegate {
     var timer_: Timer = Timer()
     var hasStart: Bool = false
     var hasPause: Bool = false
-    var center: UNUserNotificationCenter!
+    var center = UNUserNotificationCenter.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,6 @@ class timerVC: UIViewController, UNUserNotificationCenterDelegate {
         resetButton.isEnabled = false
         timeDisplay.isHidden = true
         // ask for notification permission
-        center = UNUserNotificationCenter.current()
-        center.delegate = self
         center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {}
             else if let error = error {
@@ -52,6 +50,7 @@ class timerVC: UIViewController, UNUserNotificationCenterDelegate {
                 hasStart = true
                 timeDisplay.isHidden = false
                 timer.setTime(seconds: Int(timerPicker.countDownDuration))
+                setNotif(hr: timer.hour, min: timer.minute)
                 timeDisplay.text = timer.displayTime()
                 timerPicker.isHidden = true
                 resetButton.isEnabled = true
@@ -64,7 +63,6 @@ class timerVC: UIViewController, UNUserNotificationCenterDelegate {
         if canDec {
             timeDisplay.text = timer.displayTime()
         } else {
-            sendNotif()
             timer_.invalidate()
             pressReset(self)
         }
@@ -80,16 +78,30 @@ class timerVC: UIViewController, UNUserNotificationCenterDelegate {
         resetButton.isEnabled = false
     }
     
-    func sendNotif() {
-        let content = UNMutableNotificationContent()
-        content.title = "Timer"
-        content.body = "Times Up!!!"
-        content.sound = UNNotificationSound.default
-        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
-        center.add(request) { (error: Error?) in
-            if let error_ = error {
-                print(error_.localizedDescription)
+    func setNotif(hr: Int, min: Int) {
+        center.getNotificationSettings {
+            settings in
+            DispatchQueue.main.async {
+                if settings.authorizationStatus == .authorized {
+                    let content = UNMutableNotificationContent()
+                    content.title = "Timer"
+                    content.body = "Times Up!!!"
+                    content.sound = UNNotificationSound.default
+                    let nowUTC = Date()
+                    let timeZoneOffset = Double(TimeZone.current.secondsFromGMT(for: nowUTC))
+                    let localDate = Calendar.current.date(byAdding: .second, value: Int(timeZoneOffset), to: nowUTC)!.addingTimeInterval(TimeInterval(min * 60 + hr * 3600))
+                    print(localDate)
+                    let dateComp = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: localDate)
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
+                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                    self.center.add(request) { (error: Error?) in
+                        if let error_ = error {
+                            print(error_.localizedDescription)
+                        }
+                    }
+                } else {
+                    print("not authorized")
+                }
             }
         }
     }

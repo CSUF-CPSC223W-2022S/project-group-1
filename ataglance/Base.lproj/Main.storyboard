@@ -33,6 +33,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <segue destination="zbQ-7Q-ciQ" kind="show" id="qeA-WB-lU0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-VR-fWn">
                                 <rect key="frame" x="86" y="536" width="198" height="31"/>

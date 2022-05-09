@@ -22,8 +22,6 @@ class ToDoList: UIViewController {
             tableView.setEditing(true, animated: true)
             sender.title = "Done"
             addButton.isEnabled = false
-            
-            
         }
     }
     

@@ -8,7 +8,7 @@
 import UIKit
 
 // Main Application View
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     // Outlets connected to the interface
     
     @IBOutlet var MealNameLabel: UILabel!

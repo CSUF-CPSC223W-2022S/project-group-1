@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04CB42A2829CDC0008CF6E6 /* NotificationTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */; };
+		A083F1402800A80C00DB9E20 /* ToDoListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A083F13F2800A80C00DB9E20 /* ToDoListStoryboard.storyboard */; };
+		A083F1422800A83F00DB9E20 /* TodoListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083F1412800A83F00DB9E20 /* TodoListClass.swift */; };
+		A0BB20D42802A258008A6C02 /* TodoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BB20D32802A258008A6C02 /* TodoDetailTableViewController.swift */; };
+		A0BB20D62804D063008A6C02 /* todoListStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BB20D52804D063008A6C02 /* todoListStructure.swift */; };
+		A0ED89ED2821A46200AF32CA /* TodoListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038CFC527EBE6F900066493 /* TodoListTest.swift */; };
 		B557480227C71B090036D892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480127C71B090036D892 /* AppDelegate.swift */; };
 		B557480427C71B090036D892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480327C71B090036D892 /* SceneDelegate.swift */; };
 		B557480627C71B090036D892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557480527C71B090036D892 /* ViewController.swift */; };
@@ -24,6 +30,20 @@
 		B5BC59D827D87BC0007431D3 /* CalendarMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC59D727D87BC0007431D3 /* CalendarMethods.swift */; };
 		B5CBD8C7282337060073F367 /* CalendarView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CBD8C6282337060073F367 /* CalendarView.storyboard */; };
 		B5CBD8C92823371C0073F367 /* CalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CBD8C82823371C0073F367 /* CalViewController.swift */; };
+		B711003D27FF374E00A19CE8 /* timerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711003C27FF374E00A19CE8 /* timerTest.swift */; };
+		B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */; };
+		B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3ED27D93AFB0035206B /* MQViewController.swift */; };
+		B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */; };
+		B774148E27E0FA1F00D8DACC /* timerSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B774148D27E0FA1F00D8DACC /* timerSB.storyboard */; };
+		B774149027E0FA3700D8DACC /* timerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774148F27E0FA3700D8DACC /* timerVC.swift */; };
+		B774149227E0FA6D00D8DACC /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774149127E0FA6D00D8DACC /* timer.swift */; };
+		B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */; };
+		E132FDE42822261700594354 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132FDE32822261700594354 /* TableViewCell.swift */; };
+		E132FDE628238B2200594354 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132FDE528238B2100594354 /* HomeViewController.swift */; };
+		E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */; };
+		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
+		E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A627EC37A2000E4F01 /* Notifications.swift */; };
+		E18781B62821918E009C1A91 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18781B52821918E009C1A91 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A038CFC527EBE6F900066493 /* TodoListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTest.swift; sourceTree = "<group>"; };
+		A083F13F2800A80C00DB9E20 /* ToDoListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoListStoryboard.storyboard; sourceTree = "<group>"; };
+		A083F1412800A83F00DB9E20 /* TodoListClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListClass.swift; sourceTree = "<group>"; };
+		A0BB20D32802A258008A6C02 /* TodoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailTableViewController.swift; sourceTree = "<group>"; };
+		A0BB20D52804D063008A6C02 /* todoListStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListStructure.swift; sourceTree = "<group>"; };
 		B55747FE27C71B090036D892 /* ataglance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ataglance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B557480127C71B090036D892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B557480327C71B090036D892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +90,21 @@
 		B5BC59D727D87BC0007431D3 /* CalendarMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethods.swift; sourceTree = "<group>"; };
 		B5CBD8C6282337060073F367 /* CalendarView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarView.storyboard; sourceTree = "<group>"; };
 		B5CBD8C82823371C0073F367 /* CalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalViewController.swift; sourceTree = "<group>"; };
+		B711003C27FF374E00A19CE8 /* timerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerTest.swift; sourceTree = "<group>"; };
+		B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivQuotes.swift; sourceTree = "<group>"; };
+		B71DA3ED27D93AFB0035206B /* MQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQViewController.swift; sourceTree = "<group>"; };
+		B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivQuotesTest.swift; sourceTree = "<group>"; };
+		B774148D27E0FA1F00D8DACC /* timerSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = timerSB.storyboard; sourceTree = "<group>"; };
+		B774148F27E0FA3700D8DACC /* timerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerVC.swift; sourceTree = "<group>"; };
+		B774149127E0FA6D00D8DACC /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = motivationalQuotes.storyboard; sourceTree = "<group>"; };
+		E132FDE32822261700594354 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E132FDE528238B2100594354 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "notification storyboard.storyboard"; sourceTree = "<group>"; };
+		E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E16DD5A627EC37A2000E4F01 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTestCases.swift; sourceTree = "<group>"; };
+		E18781B52821918E009C1A91 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +132,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A04CB42828298A39008CF6E6 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B557483127C71D490036D892 /* .gitignore */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A083F13E2800A7E700DB9E20 /* ToDoListFeature */ = {
+			isa = PBXGroup;
+			children = (
+				A083F13F2800A80C00DB9E20 /* ToDoListStoryboard.storyboard */,
+				A0BB20D52804D063008A6C02 /* todoListStructure.swift */,
+				A083F1412800A83F00DB9E20 /* TodoListClass.swift */,
+				A0BB20D32802A258008A6C02 /* TodoDetailTableViewController.swift */,
+			);
+			path = ToDoListFeature;
+			sourceTree = "<group>";
+		};
 		B55747F527C71B090036D892 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +158,7 @@
 				B557481727C71B0D0036D892 /* ataglanceTests */,
 				B557482127C71B0D0036D892 /* ataglanceUITests */,
 				B55747FF27C71B090036D892 /* Products */,
+				A04CB42828298A39008CF6E6 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,13 +176,16 @@
 			isa = PBXGroup;
 			children = (
 				B5C696F428218DEE0045DD9F /* CalendarGroup */,
+				A083F13E2800A7E700DB9E20 /* ToDoListFeature */,
+				B774148C27E0FA0400D8DACC /* timer */,
+				B7189C4D27D7D89F0046A189 /* MotivationalQuotes */,
+				E16DD5A127EC3610000E4F01 /* notifications */,
 				B557480727C71B090036D892 /* Main.storyboard */,
 				B557480127C71B090036D892 /* AppDelegate.swift */,
 				B557480327C71B090036D892 /* SceneDelegate.swift */,
 				B557480527C71B090036D892 /* ViewController.swift */,
 				B557480A27C71B0C0036D892 /* Assets.xcassets */,
 				B557480F27C71B0D0036D892 /* Info.plist */,
-				B557483127C71D490036D892 /* .gitignore */,
 			);
 			path = ataglance;
 			sourceTree = "<group>";
@@ -130,7 +193,11 @@
 		B557481727C71B0D0036D892 /* ataglanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				B71DA3EF27D947DD0035206B /* motivQuotesTest.swift */,
 				B557481827C71B0D0036D892 /* ataglanceTests.swift */,
+				E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */,
+				A038CFC527EBE6F900066493 /* TodoListTest.swift */,
+				B711003C27FF374E00A19CE8 /* timerTest.swift */,
 			);
 			path = ataglanceTests;
 			sourceTree = "<group>";
@@ -157,6 +224,39 @@
 				B5BC59D327D85D4D007431D3 /* CalendarCell.swift */,
 			);
 			path = CalendarGroup;
+			sourceTree = "<group>";
+		};
+		B7189C4D27D7D89F0046A189 /* MotivationalQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				B7FB455227CE876D00700090 /* motivationalQuotes.storyboard */,
+				B7189C4E27D7DA2F0046A189 /* MotivQuotes.swift */,
+				B71DA3ED27D93AFB0035206B /* MQViewController.swift */,
+			);
+			path = MotivationalQuotes;
+			sourceTree = "<group>";
+		};
+		B774148C27E0FA0400D8DACC /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				B774148D27E0FA1F00D8DACC /* timerSB.storyboard */,
+				B774148F27E0FA3700D8DACC /* timerVC.swift */,
+				B774149127E0FA6D00D8DACC /* timer.swift */,
+			);
+			path = timer;
+			sourceTree = "<group>";
+		};
+		E16DD5A127EC3610000E4F01 /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				E16DD5A227EC367F000E4F01 /* notification storyboard.storyboard */,
+				E16DD5A627EC37A2000E4F01 /* Notifications.swift */,
+				E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */,
+				E18781B52821918E009C1A91 /* TableViewController.swift */,
+				E132FDE32822261700594354 /* TableViewCell.swift */,
+				E132FDE528238B2100594354 /* HomeViewController.swift */,
+			);
+			path = notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +323,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					B55747FD27C71B090036D892 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -265,8 +365,12 @@
 			files = (
 				B5CBD8C7282337060073F367 /* CalendarView.storyboard in Resources */,
 				B557483227C71D490036D892 /* .gitignore in Resources */,
+				B774148E27E0FA1F00D8DACC /* timerSB.storyboard in Resources */,
+				B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */,
+				A083F1402800A80C00DB9E20 /* ToDoListStoryboard.storyboard in Resources */,
 				B557480B27C71B0C0036D892 /* Assets.xcassets in Resources */,
 				B557480927C71B090036D892 /* Main.storyboard in Resources */,
+				E16DD5A327EC367F000E4F01 /* notification storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +397,8 @@
 			files = (
 				B5B1661228234E8F0067B559 /* WeeklyViewController.swift in Sources */,
 				B5B16616282363D20067B559 /* EventCell.swift in Sources */,
+				B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */,
+				E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */,
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				B5B16614282363C80067B559 /* EventEditViewController.swift in Sources */,
 				B5B16618282367C20067B559 /* Event.swift in Sources */,
@@ -300,7 +406,17 @@
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
 				B5BC59D827D87BC0007431D3 /* CalendarMethods.swift in Sources */,
 				B5BC59D427D85D4D007431D3 /* CalendarCell.swift in Sources */,
+				A083F1422800A83F00DB9E20 /* TodoListClass.swift in Sources */,
+				A0BB20D62804D063008A6C02 /* todoListStructure.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
+				A0BB20D42802A258008A6C02 /* TodoDetailTableViewController.swift in Sources */,
+				B774149227E0FA6D00D8DACC /* timer.swift in Sources */,
+				E18781B62821918E009C1A91 /* TableViewController.swift in Sources */,
+				B774149027E0FA3700D8DACC /* timerVC.swift in Sources */,
+				B71DA3EE27D93AFB0035206B /* MQViewController.swift in Sources */,
+				E132FDE42822261700594354 /* TableViewCell.swift in Sources */,
+				E132FDE628238B2200594354 /* HomeViewController.swift in Sources */,
+				E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71DA3F027D947DD0035206B /* motivQuotesTest.swift in Sources */,
+				A04CB42A2829CDC0008CF6E6 /* NotificationTestCases.swift in Sources */,
 				B557481927C71B0D0036D892 /* ataglanceTests.swift in Sources */,
+				A0ED89ED2821A46200AF32CA /* TodoListTest.swift in Sources */,
+				B711003D27FF374E00A19CE8 /* timerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU24D8HEB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ataglance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,6 +619,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU24D8HEB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ataglance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

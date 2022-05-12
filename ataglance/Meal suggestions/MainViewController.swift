@@ -54,7 +54,7 @@ class ViewController: UIViewController {
                     self.MealLabelTwo.text = mealInfo.meals[1].mealName
                     let mealUrl2 = URL(string: mealInfo.meals[1].mealUrl)!
                     mInfo.fetchImage(url: mealUrl2) {
-                        imagein
+                        (image)-> Void in
                         /* Run the code on the main thread so the application continues to
                            run while waiting for the code block to complete.
                          */
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
                     self.MealLabelThree.text = mealInfo.meals[2].mealName
                     let mealUrl3 = URL(string: mealInfo.meals[2].mealUrl)!
                     mInfo.fetchImage(url: mealUrl3) {
-                        imagein
+                        (image)-> Void in
                         /* Run the code on the main thread so the application continues to
                            run while waiting for the code block to complete.
                          */
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
                 
                 // Load photo of the meal using the url returned by the server
                 mInfo.fetchImage(url: mealUrl) {
-                    imagein
+                    (image)-> Void in
                     /* Run the code on the main thread so the application continues to
                        run while waiting for the code block to complete.
                      */

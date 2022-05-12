@@ -67,7 +67,7 @@ class NotificationsViewController: UIViewController
                             return
                         }
                     }
-                    let ac = UIAlertController(title: "Notification Scheduled", message: "At " + self.formattedDate(date: date), preferredStyle: .alert)
+                    let ac = UIAlertController(title: "Notification Scheduled", message: "For " + self.formattedDate(date: date), preferredStyle: .alert)
                     ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in }))
                     self.present(ac, animated: true)
                 }
@@ -98,7 +98,7 @@ class NotificationsViewController: UIViewController
     func formattedDate(date: Date) -> String
     {
         let formatter = DateFormatter()
-        formatter.dateFormat = "d MMM y HH:mm"
+        formatter.dateFormat = "MMM d, y h:mm a"
         return formatter.string(from: date)
     }
 }

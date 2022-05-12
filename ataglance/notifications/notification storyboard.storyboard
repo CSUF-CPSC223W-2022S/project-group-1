@@ -12,7 +12,7 @@
         <scene sceneID="xro-df-yQY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j6F-FG-LBb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" image="lasso" catalog="system" id="RRB-y3-YsX"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="paperplane.fill" catalog="system" id="RRB-y3-YsX"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aiv-pn-Uwo">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKu-JF-gbi">
-                                <rect key="frame" x="123" y="287" width="142" height="31"/>
+                                <rect key="frame" x="122" y="282" width="171" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="show notifications"/>
@@ -45,8 +45,15 @@
                                     <segue destination="qoR-tu-c6O" kind="show" id="3Qp-pY-vfy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notifications " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-1o-KZO">
+                                <rect key="frame" x="121" y="88" width="172" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDc-Td-tXF">
-                                <rect key="frame" x="131" y="406" width="125" height="31"/>
+                                <rect key="frame" x="121" y="473" width="163" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="add notification"/>
@@ -54,13 +61,6 @@
                                     <segue destination="Y6W-OH-hqX" kind="show" id="l2Z-Fa-4MS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notifications " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-1o-KZO">
-                                <rect key="frame" x="122" y="88" width="172" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ftB-LB-BRF"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,10 +110,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybX-j9-6bW">
-                                <rect key="frame" x="140" y="689" width="114" height="46"/>
+                                <rect key="frame" x="122" y="689" width="150" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Create!"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Create Notification!"/>
                                 <connections>
                                     <action selector="scheduleAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="klV-7x-y9F"/>
                                 </connections>
@@ -218,7 +218,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lasso" catalog="system" width="128" height="118"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

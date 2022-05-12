@@ -112,14 +112,6 @@ class NotificationList {
         }
     }
     
-//    func findNotification(Notification: Notification) {
-//    let index = notifications.firstIndex(of: Notification)
-//    if let indexvalue = index  {
-//
-//    } else {
-//        print("Notification does not exist")
-//        return
-//    }
-//    }
+
 }
     

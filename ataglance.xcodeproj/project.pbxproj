@@ -44,6 +44,11 @@
 		E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A427EC377C000E4F01 /* NotificationsViewController.swift */; };
 		E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16DD5A627EC37A2000E4F01 /* Notifications.swift */; };
 		E18781B62821918E009C1A91 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18781B52821918E009C1A91 /* TableViewController.swift */; };
+		E1D83C90282B7BB800544F8B /* Meals Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D83C8F282B7BB800544F8B /* Meals Storyboard.storyboard */; };
+		E1D83C92282C388200544F8B /* Meals class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D83C91282C388200544F8B /* Meals class.swift */; };
+		E1D83C94282C38BE00544F8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D83C93282C38BE00544F8B /* MainViewController.swift */; };
+		E1D83C96282C38FF00544F8B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D83C95282C38FF00544F8B /* Helpers.swift */; };
+		E1D83C98282C392300544F8B /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D83C97282C392300544F8B /* MealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +110,11 @@
 		E16DD5A627EC37A2000E4F01 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		E16DD5AA27ECAAAD000E4F01 /* NotificationTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTestCases.swift; sourceTree = "<group>"; };
 		E18781B52821918E009C1A91 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E1D83C8F282B7BB800544F8B /* Meals Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Meals Storyboard.storyboard"; sourceTree = "<group>"; };
+		E1D83C91282C388200544F8B /* Meals class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meals class.swift"; sourceTree = "<group>"; };
+		E1D83C93282C38BE00544F8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E1D83C95282C38FF00544F8B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E1D83C97282C392300544F8B /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +185,7 @@
 		B557480027C71B090036D892 /* ataglance */ = {
 			isa = PBXGroup;
 			children = (
+				E1D83C8E282B7B9D00544F8B /* Meal suggestions */,
 				B5C696F428218DEE0045DD9F /* CalendarGroup */,
 				A083F13E2800A7E700DB9E20 /* ToDoListFeature */,
 				B774148C27E0FA0400D8DACC /* timer */,
@@ -257,6 +268,18 @@
 				E132FDE528238B2100594354 /* HomeViewController.swift */,
 			);
 			path = notifications;
+			sourceTree = "<group>";
+		};
+		E1D83C8E282B7B9D00544F8B /* Meal suggestions */ = {
+			isa = PBXGroup;
+			children = (
+				E1D83C8F282B7BB800544F8B /* Meals Storyboard.storyboard */,
+				E1D83C91282C388200544F8B /* Meals class.swift */,
+				E1D83C93282C38BE00544F8B /* MainViewController.swift */,
+				E1D83C95282C38FF00544F8B /* Helpers.swift */,
+				E1D83C97282C392300544F8B /* MealViewController.swift */,
+			);
+			path = "Meal suggestions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CBD8C7282337060073F367 /* CalendarView.storyboard in Resources */,
+				E1D83C90282B7BB800544F8B /* Meals Storyboard.storyboard in Resources */,
 				B557483227C71D490036D892 /* .gitignore in Resources */,
 				B774148E27E0FA1F00D8DACC /* timerSB.storyboard in Resources */,
 				B7FB455327CE876D00700090 /* motivationalQuotes.storyboard in Resources */,
@@ -398,14 +422,17 @@
 				B5B1661228234E8F0067B559 /* WeeklyViewController.swift in Sources */,
 				B5B16616282363D20067B559 /* EventCell.swift in Sources */,
 				B7189C4F27D7DA2F0046A189 /* MotivQuotes.swift in Sources */,
+				E1D83C96282C38FF00544F8B /* Helpers.swift in Sources */,
 				E16DD5A727EC37A2000E4F01 /* Notifications.swift in Sources */,
 				B557480627C71B090036D892 /* ViewController.swift in Sources */,
 				B5B16614282363C80067B559 /* EventEditViewController.swift in Sources */,
 				B5B16618282367C20067B559 /* Event.swift in Sources */,
 				B5CBD8C92823371C0073F367 /* CalViewController.swift in Sources */,
+				E1D83C92282C388200544F8B /* Meals class.swift in Sources */,
 				B557480227C71B090036D892 /* AppDelegate.swift in Sources */,
 				B5BC59D827D87BC0007431D3 /* CalendarMethods.swift in Sources */,
 				B5BC59D427D85D4D007431D3 /* CalendarCell.swift in Sources */,
+				E1D83C98282C392300544F8B /* MealViewController.swift in Sources */,
 				A083F1422800A83F00DB9E20 /* TodoListClass.swift in Sources */,
 				A0BB20D62804D063008A6C02 /* todoListStructure.swift in Sources */,
 				B557480427C71B090036D892 /* SceneDelegate.swift in Sources */,
@@ -417,6 +444,7 @@
 				E132FDE42822261700594354 /* TableViewCell.swift in Sources */,
 				E132FDE628238B2200594354 /* HomeViewController.swift in Sources */,
 				E16DD5A527EC377D000E4F01 /* NotificationsViewController.swift in Sources */,
+				E1D83C94282C38BE00544F8B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
